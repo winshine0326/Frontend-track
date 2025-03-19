@@ -48,31 +48,30 @@ const MapTest4 = () => {
         },
     ];
     const chemists = people.filter((item,index)=>item.profession=="화학자");
+    const etc = people.filter((item,index)=>item.profession!="화학자");
+
+    const Ulcard = ({profess})=>{
+        return(
+            <ul>
+                {profess.map((item) => {
+                    return(
+                        <li className='card'>
+                            <img src={getImageUrl(item.imageId)}/>
+                            <p><b>{item.name}</b>:{item.profession} known from {item.accomplishment}</p>
+                        </li>
+                    )
+                })}
+            </ul>
+        )
+    }
+
     return (
         <div>
             <h1>Scientists</h1>
-            <h1>화학자들</h1>
-            <ul>
-                {chemists.map((item) => {
-                    return(
-                        <li className='card'>
-                            <img src={getImageUrl(item.imageId)}/>
-                            <p><b>{item.name}</b>:{item.profession} known from {item.accomplishment}</p>
-                        </li>
-                    )
-                })}
-            </ul>
+            
+            <Ulcard profess={chemists}/>
             <h1>기타</h1>
-            <ul>
-                {people.map((item) => {
-                    return(
-                        <li className='card'>
-                            <img src={getImageUrl(item.imageId)}/>
-                            <p><b>{item.name}</b>:{item.profession} known from {item.accomplishment}</p>
-                        </li>
-                    )
-                })}
-            </ul>
+            <Ulcard profess={etc}/>
         </div>
     )
 }
