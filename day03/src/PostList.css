@@ -1,0 +1,102 @@
+/*postList.css */
+
+/* 댓글 목록 전체 스타일 */
+.comment-list {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 개별 댓글 스타일 */
+  .comment {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef;
+    align-items: flex-start;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .comment:last-child {
+    border-bottom: none;
+  }
+  
+  /* 댓글에 마우스를 올렸을 때 배경색과 그림자 효과 */
+  .comment:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 아바타 이미지 스타일 */
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  /* 댓글 내용 */
+  .comment-details {
+    flex: 1;
+  }
+  
+  /* 사용자 이름 스타일 */
+  .user-name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* 댓글 텍스트 스타일 */
+  .comment-text {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* 댓글 작성 시간 스타일 */
+  .comment-time {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  /* 삭제 버튼 스타일 */
+  .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .delete-button:hover {
+    background-color: gray  ;
+  }
+  
+  /* 좋아요 버튼과 좋아요 수 */
+  
+  .like-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    color: #ff5c5c;
+  }
+  
+  .like-count {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #555;
+  }
