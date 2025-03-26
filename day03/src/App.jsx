@@ -5,6 +5,7 @@ import MapTest3 from './MapTest3'
 import MapTest4 from './MapTest4'
 import PackingList from './PackingList'
 import PostList from './PostList'
+import PostList2 from './PostList2'
  
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       {/* <PackingList/> */}
       {/* <MapTest3/> */}
       {/* <MapTest4/> */}
-      <PostList/>
+      <PostList2/>
     </div>
   )
 }
