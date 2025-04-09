@@ -1,0 +1,97 @@
+.wrapper {
+    margin: 15px auto;
+    width : 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 grey;
+    background-color: white;
+    position : relative;
+  }
+.container{
+  margin: 15px auto;
+  width : 70%;
+
+}
+
+input{
+    height: 30px;
+    width: 60%;
+    border: 1px solid lightgray;
+    border-radius:5px;
+    margin : 10px 20px;
+}
+b{margin-left :20px;}
+button{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-left : 20px;
+    
+
+}
+  .wrapper:hover {
+    background-color: lightgray;
+  }
+  
+  .control{
+    position : absolute;
+    right : 5%;
+  }
+  hr{
+    border : 0.7px solid #ccc;
+    margin-top: 20px;
+  }
+  span{
+    color : orangered;
+  }
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    /* margin: 1rem auto; */
+    margin : 10px 20px;
+    background-color: white;
+  }
+  
+  /* 테이블 행 */
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: darkgrey;
+  }
+  
+  /* 테이블 올렸을 때 */
+  tbody tr:hover {
+    background-color: #d3d3d3;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  /* 테이블 비율 */
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 10%;
+  }
+  
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 20%;
+  }
+  
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 40%;
+  }
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 30%;
+  }
+  tr:nth-child(even) {
+    background-color: #fff6f6;
+  }
