@@ -2,6 +2,7 @@ import './App.css'
 import CallbackTest from './CallbackTest'
 import PromiseTest from './PromiseTest'
 import AsyncTest from './AsyncTest'
+import AxiosTest from './AxiosTest';
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
       {/* <CallbackTest/> */}
       {/* <PromiseTest/> */}
-      <AsyncTest/>
+      {/* <AsyncTest/> */}
+      <AxiosTest/>
     </>
   )
 }
