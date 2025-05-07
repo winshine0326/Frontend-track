@@ -6,6 +6,7 @@ import Card from "./components/Card";
 import NoPage from "./components/NoPage.jsx";
 import CardList from "./CardList";
 import Home from "./components/Home";
+import Detail from "./components/Detail.js";
 
 export default function App() {
   return (
@@ -14,6 +15,12 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cardList" element={<CardList />} />
         <Route path="/card" element={<Card />} />
+        <Route
+          path="/detail/:id"
+          element={
+            <Detail/>
+          }
+        />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </div>
