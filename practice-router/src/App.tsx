@@ -7,6 +7,7 @@ import NoPage from "./components/NoPage.jsx";
 import CardList from "./CardList";
 import Home from "./components/Home";
 import Detail from "./components/Detail.js";
+import DetailTab from "./components/DetailTab.js";
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
         <Route
           path="/detail/:id"
           element={
-            <Detail/>
+            <DetailTab/>
           }
         />
         <Route path="*" element={<NoPage />} />
