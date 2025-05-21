@@ -115,12 +115,13 @@
   z-index: 1000;
 }
 
-.modal-content {
+.modal-content-fuck {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
+
 }
 
 .modal-content h2 {
@@ -206,4 +207,3 @@
 .delete-button:hover {
   background-color: #c82333;
 }
- 

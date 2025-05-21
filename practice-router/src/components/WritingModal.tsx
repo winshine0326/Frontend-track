@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import '../styles.css';
+import '../App.css';
 
 interface WriteModalProps {
   isOpen: boolean;
@@ -30,7 +30,7 @@ const WriteModal: React.FC<WriteModalProps> = ({ isOpen, onClose, onSubmit, init
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content">
+      <div className="modal-content-fuck">
         <h2>{initialTitle ? '게시글 수정' : '새 게시글 작성'}</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
