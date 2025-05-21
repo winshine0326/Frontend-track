@@ -9,6 +9,7 @@ export default function Router() {
                 <Link to="/card">Card</Link>
                 <Link to="/cardList">CardList</Link>
                 <Link to="/about">about</Link>
+                <Link to="/board">board</Link>
             </nav>
         </>
     );
